@@ -192,6 +192,7 @@ class Platformer extends Phaser.Scene {
             my.sprite.player.anims.play('jump');
         }
         if(my.sprite.player.body.blocked.down && Phaser.Input.Keyboard.JustDown(cursors.up)) {
+            this.sound.play("baam");
             my.sprite.player.body.setVelocityY(this.JUMP_VELOCITY);
             my.vfx.jumping.startFollow(my.sprite.player, my.sprite.player.displayWidth/2-10, my.sprite.player.displayHeight/2-5, false);
             my.vfx.jumping.setParticleSpeed(this.PARTICLE_VELOCITY, 0);
