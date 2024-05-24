@@ -29,9 +29,9 @@ let config = {
             }
         }
     },
-    width: 1440,
-    height: 900,
-    scene: [Load, Platformer]
+    width: 1000,
+    height: 600,
+    scene: [Load, Platformer, EndLevel]
 }
 
 var cursors;
